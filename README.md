@@ -22,3 +22,5 @@
 ## React-icons
 
 ## Jest react testing for unit tests
+
+## Cypress end to end testing
