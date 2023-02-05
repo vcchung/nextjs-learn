@@ -20,3 +20,5 @@
 ## Tailwind CSS
 
 ## React-icons
+
+## Jest react testing for unit tests
