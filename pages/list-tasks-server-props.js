@@ -10,9 +10,9 @@ const ListTasksServerProps = ({ tasks }) => {
 };
 
 export async function getServerSideProps(context) {
-  const tasks = await fetch("http://localhost:3000/api/external-tasks").then(
-    (data) => data.json()
-  );
+  const tasks = await fetch(
+    "https://nextjs-learn-production.up.railway.app/api/external-tasks"
+  ).then((data) => data.json());
   return {
     props: {
       tasks: tasks,
