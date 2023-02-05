@@ -11,7 +11,9 @@ const ListTasksCsr = () => {
   }, []);
   return (
     <>
-      <h1>This is list tasks page Client Side Rendering using useEffect!</h1>
+      <h1 className="font-bold">
+        This is list tasks page Client Side Rendering using useEffect!
+      </h1>
       <Tasks tasks={tasks} />
     </>
   );
