@@ -1,15 +1,15 @@
 import Tasks from "../components/Tasks";
 
-const ListTasksStaticProps = ({ tasks }) => {
+const ListTasksServerProps = ({ tasks }) => {
   return (
     <>
-      <h1>This is list tasks page using static props!</h1>
+      <h1>This is list tasks page using server side props!</h1>
       <Tasks tasks={tasks} />
     </>
   );
 };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const tasks = await fetch("https://jsonplaceholder.typicode.com/todos").then(
     (data) => data.json()
   );
@@ -19,4 +19,4 @@ export async function getStaticProps(context) {
     },
   };
 }
-export default ListTasksStaticProps;
+export default ListTasksServerProps;

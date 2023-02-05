@@ -13,6 +13,11 @@ function NavBar() {
         <Link href="/list-tasks-static-props">List Tasks Static Props</Link>
       </li>
       <li>
+        <Link href="/list-tasks-server-props">
+          List Tasks Server Side Props
+        </Link>
+      </li>
+      <li>
         <Link href="/new-tasks">New</Link>
       </li>
     </ul>
