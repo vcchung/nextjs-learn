@@ -10,7 +10,7 @@ const ListTasksServerProps = ({ tasks }) => {
 };
 
 export async function getServerSideProps(context) {
-  const tasks = await fetch("https://jsonplaceholder.typicode.com/todos").then(
+  const tasks = await fetch("http://localhost:3000/api/external-tasks").then(
     (data) => data.json()
   );
   return {
