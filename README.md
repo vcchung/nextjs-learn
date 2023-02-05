@@ -16,3 +16,7 @@
   - static file generation at build time to generate the HTML
   - endpoint fetched during npm build time
   - [static side generation](/pages/list-tasks-static-props.js)
+
+## Tailwind CSS
+
+## React-icons
